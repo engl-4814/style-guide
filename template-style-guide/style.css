@@ -24,7 +24,9 @@
   Define it once, use across your code.
   Change it in one spot, it changes everywhere it's used in your code!
 
-  See https://randoma11y.com to establish a basic 2-color scheme: primary and secondary colors. If you want accent shade(s), feel free to consider additional complimentary colors.
+  - See https://randoma11y.com to establish a basic 2-color scheme: primary and secondary colors.
+  - Note how the colors shades move from 1-5, i.e., lighter shades to darker shades. To produce shades, use VS Code's color picker tool to produce gradiations of the initial color.
+  - If you want //accent// shade(s), feel free to consider additional complimentary colors.
 =============*/
 
 :root {
@@ -165,7 +167,7 @@ a {
 a:hover {
   color: var(--neutralShade1);
   background-color: var(--primaryColor);
-  border-bottom: 1px solid var(--primaryShade8);
+  border-bottom: 3px solid var(--primaryShade5);
   transition: 0.4s;
 }
 
@@ -179,7 +181,7 @@ a.primary {
 a.primary:hover {
   color: var(--primaryShade1);
   background-color: var(--primaryShade4);
-  border-bottom: 1px solid var(--primaryShade8);
+  border-bottom: 3px solid var(--secondaryColor);
   transition: 0.4s;
 }
 
@@ -193,7 +195,7 @@ a.secondary {
 a.secondary:hover {
   color: var(--secondaryShade1);
   background-color: var(--secondaryShade5);
-  border-bottom: 1px solid var(--secondaryShade8);
+  border-bottom: 3px solid var(--primaryColor);
   transition: 0.4s;
 }
 
