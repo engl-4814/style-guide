@@ -23,6 +23,8 @@
 
   Define it once, use across your code.
   Change it in one spot, it changes everywhere it's used in your code!
+
+  See https://randoma11y.com to establish a basic 2-color scheme: primary and secondary colors. If you want accent shade(s), feel free to consider additional complimentary colors.
 =============*/
 
 :root {
@@ -85,6 +87,11 @@
   /* Change default root font size (16px), if desired */
   font-size: 18px;
 }
+
+
+/*
+  After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
+*/
 
 /* GENERAL COLOR SCHEME */
 body {
