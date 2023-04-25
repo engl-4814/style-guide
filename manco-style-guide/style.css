@@ -107,7 +107,8 @@ body {
 
 /* Font Families */
 body { font-family: "Josefin Sans", sans-serif;}
-h1,h2,h3 { font-family: "Rajdhani", serif; }
+h1,h2,h3 { font-family: "Rajdhani", sans-serif; }
+h4, h5, h6 {font-family: "Yeseva One", cursive; }
 
 /* Emphasis and Bolding */
 strong { font-weight: 500; }
