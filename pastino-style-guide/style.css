@@ -7,7 +7,7 @@
 
   1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
 ==============*/
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Source+Sans+Pro:wght@200;600&display=swap');
 
 /*============
   COLOR SCHEME
@@ -35,49 +35,42 @@
   --backgroundColor: #fff;
   --foregroundColor: #111;
 
-  --primaryColor: #03a9f4;
-  --primaryShade1: #e1f5fe;
-  --primaryShade2: #b3e5fc;
-  --primaryShade3: #4fc3f7;
-  --primaryShade4: #0288d1;
-  --primaryShade5: #0277bd;
+  --primaryColor: teal;
+  --primaryShade1: rgb(205, 248, 248);
+  --primaryShade2: rgb(99, 188, 188);
+  --primaryShade3: rgb(50, 148, 148);
+  --primaryShade4: rgb(21, 114, 114);
+  --primaryShade5: rgb(1, 59, 59);
 
-  --secondaryColor: #673ab7;
-  --secondaryShade1: #ede7f6;
-  --secondaryShade2: #d1c4e9;
-  --secondaryShade3: #9575cd;
-  --secondaryShade4: #512da8;
-  --secondaryShade5: #311b92;
+  --SecondayColor: #f44336;
+  --secondaryShade1: #ffdde0;
+  --secondaryShade2: #f6b4bb;
+  --secondaryShade3: #ef9a9a;
+  --secondaryShade4: #d32f2f;
+  --secondaryShade5: #b71c1c;
 
-  --accentColor: #009688;
-  --accentShade1: #e0f2f1;
-  --accentShade2: #b2dfdb;
-  --accentShade3: #4db6ac;
-  --accentShade4: #00796b;
-  --accentShade5: #004d40;
+  --accentColor: #8bc34a;
+  --accentShade1: #e7f6d5;
+  --accentShade2: #c5e1a5;
+  --accentShade3: #aed581;
+  --accentShade4: #689f38;
+  --accentShade5: #558b2f;
 
-  --accent2Color: #8bc34a;
-  --accent2Shade1: #e7f6d5;
-  --accent2Shade2: #c5e1a5;
-  --accent2Shade3: #aed581;
-  --accent2Shade4: #689f38;
-  --accent2Shade5: #558b2f;
+  --accent2Color: #883874;
+  --accent2Shade1: #eaa5d9;
+  --accent2Shade2: #c67db4;
+  --accent2Shade3: #ab5796;
+  --accent2Shade4: #611c50;
+  --accent2Shade5: #3d0e31;
 
-  --accent3Color: #f44336;
-  --accent3Shade1: #ffdde0;
-  --accent3Shade2: #ffcdd2;
-  --accent3Shade3: #ef9a9a;
-  --accent3Shade4: #d32f2f;
-  --accent3Shade5: #b71c1c;
-
-  --neutralShade1: #f2f2f2;
-  --neutralShade2: #e8e9e9;
-  --neutralShade3: #d1d3d4;
-  --neutralShade4: #babdbf;
-  --neutralShade5: #808488;
-  --neutralShade6: #666a6d;
-  --neutralShade7: #4d5052;
-  --neutralShade8: #212122;
+  --neutralShade1: #eafdf5;
+  --neutralShade2: #c3d3cc;
+  --neutralShade3: #aab8b2;
+  --neutralShade4: #808b87;
+  --neutralShade5: #585f5c;
+  --neutralShade6: #454c49;
+  --neutralShade7: #2b2e2d;
+  --neutralShade8: #030403;
 
   --grayColor: #999;
   --lightGrayColor: #ddd;
@@ -106,21 +99,22 @@ body {
 ===========*/
 
 /* Font Families */
-body { font-family: "Poppins", sans-serif;}
-h1,h2,h3 { font-family: "Exo 2", serif; }
+body { font-family: 'Source Sans Pro', sans-serif;}
+h1 {font-family: 'Source Sans Pro', sans-serif;}
+h2,h3 { font-family: 'DM Serif Text', serif; }
 
 /* Emphasis and Bolding */
 strong { font-weight: 500; }
-em { font-style: italic; }
+em { font-style: bold; }
 
 /* Font Weight, Sizing & Spacing */
 body {
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.5;
   transition: all 0.3s ease;
 }
 h1 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: clamp(2.5rem,3rem,3.5rem);
   line-height: 1.2;
   text-transform: uppercase;
