@@ -37,7 +37,7 @@
 
   --primaryColor: #03a9f4;
   --primaryShade1: #e1f5fe;
-  --primaryShade2: #b3e5fc;
+  --primaryShade2: #ceefff;
   --primaryShade3: #4fc3f7;
   --primaryShade4: #0288d1;
   --primaryShade5: #0277bd;
@@ -106,8 +106,8 @@ body {
 ===========*/
 
 /* Font Families */
-body { font-family: "Poppins", sans-serif;}
-h1,h2,h3 { font-family: "Exo 2", serif; }
+body { font-family: "Noto Sans", sans-serif;}
+h1,h2,h3 { font-family: "Dosis", sans-serif; }
 
 /* Emphasis and Bolding */
 strong { font-weight: 500; }
