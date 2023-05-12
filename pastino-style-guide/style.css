@@ -32,8 +32,8 @@
 :root {
   --canvasColor: #f9f9f9;
 
-  --backgroundColor: #fff;
-  --foregroundColor: #111;
+  --backgroundColor: teal;
+  --foregroundColor: #eafdf5;
 
   --primaryColor: teal;
   --primaryShade1: rgb(205, 248, 248);
@@ -42,7 +42,7 @@
   --primaryShade4: rgb(21, 114, 114);
   --primaryShade5: rgb(1, 59, 59);
 
-  --SecondayColor: #f44336;
+  --secondayColor: #f44336;
   --secondaryShade1: #ffdde0;
   --secondaryShade2: #f6b4bb;
   --secondaryShade3: #ef9a9a;
