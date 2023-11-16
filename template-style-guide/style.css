@@ -1,4 +1,4 @@
-/* 
+/*
   When you complete this style guide, you will copy the following scope of the code below starting at the font import until the comment that states "STYLES BELOW ARE SPECIFIC TO THE STYLE GUIDE"
 */
 
@@ -18,7 +18,7 @@
     - Use in code later as "color: var(--variableName)"
 
   The power of CSS variables includes interchangability. For example, when you want to change your color pallette, you only need to change the value defined at the variable.
-  
+
   For example, if you want to change your background and foreground colors, your primary and secondary colors, etc., locate the variable in the :root, change it, and then that value will be applied anywhere that variable is used in your CSS.
 
   Define it once, use across your code.
@@ -81,7 +81,7 @@
 
   --grayColor: #999;
   --lightGrayColor: #ddd;
-  
+
   /* You can also use it for generally applied sizing and spacing. */
   --borderRadius: 6px;
   --boxShadow: 0 2px 5px rgba(#333, 0.2);
@@ -97,7 +97,7 @@
 
 /* GENERAL COLOR SCHEME */
 body {
-  background: var(--canvasColor);
+  background: var(--backgroundColor);
   color: var(--neutralShade8);
 }
 
@@ -158,8 +158,8 @@ a { font-weight: 500; }
 /* Default Font Colors & Styling */
 
 /* default links */
-a { 
-  color: var(--neutralShade8); 
+a {
+  color: var(--neutralShade8);
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
@@ -172,8 +172,8 @@ a:hover {
 }
 
 /* primary color links */
-a.primary { 
-  color: var(--primaryColor); 
+a.primary {
+  color: var(--primaryColor);
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
@@ -186,8 +186,8 @@ a.primary:hover {
 }
 
 /* secondary color links */
-a.secondary { 
-  color: var(--secondaryShade5); 
+a.secondary {
+  color: var(--secondaryShade5);
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
@@ -223,8 +223,8 @@ main {
   margin: 3em auto;
   display: grid;
   grid-template-columns: 30ch repeat(5, minmax(50px,1fr));
-  grid-template-areas: 
-  "colors typography typography typography headlines headlines" 
+  grid-template-areas:
+  "colors typography typography typography headlines headlines"
   "colors bodyex bodyex bodyex links links";
   color: var(--foregroundColor);
   text-align: left;
@@ -427,8 +427,8 @@ main > section:not(:first-child) {
   main {
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "colors colors" 
+    grid-template-areas:
+    "colors colors"
     "typography typography"
     "headlines headlines"
     "bodyex bodyex"
@@ -464,8 +464,8 @@ main > section:not(:first-child) {
 @media (min-width: 975px) and (max-width: 1200px) {
   main {
     grid-template-columns: 30ch auto auto;
-    grid-template-areas: 
-    "colors typography typography" 
+    grid-template-areas:
+    "colors typography typography"
     "colors headlines headlines"
     "colors bodyex links";
   }
