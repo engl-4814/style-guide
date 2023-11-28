@@ -1,0 +1,244 @@
+/*============
+  IMPORT FONTS
+
+  1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
+==============*/
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*============
+  COLOR SCHEME
+
+  2. Define the color scheme within the root element by using CSS variables:
+
+    - '--variableName: color_value;'
+    - Use in code later as "color: var(--variableName)"
+
+  The power of CSS variables includes interchangability. For example, when you want to change your color pallette, you only need to change the value defined at the variable.
+
+  For example, if you want to change your background and foreground colors, your primary and secondary colors, etc., locate the variable in the :root, change it, and then that value will be applied anywhere that variable is used in your CSS.
+
+  Define it once, use across your code.
+  Change it in one spot, it changes everywhere it's used in your code!
+
+  - See https://randoma11y.com to establish a basic 2-color scheme: primary and secondary colors.
+  - Note how the colors shades move from 1-5, i.e., lighter shades to darker shades. To produce shades, use VS Code's color picker tool to produce gradiations of the initial color.
+  - If you want //accent// shade(s), feel free to consider additional complimentary colors.
+=============*/
+
+:root {
+  --canvasColor: #f9f9f9;
+
+  --backgroundColor: #fff;
+  --foregroundColor: #111;
+
+  --primaryColor: #800080; /* Purple */
+  --primaryShade1: #e1d4e9;
+  --primaryShade2: #c3a8d9;
+  --primaryShade3: #a57cc9;
+  --primaryShade4: #8741b9;
+  --primaryShade5: #660099;
+
+  --secondaryColor: #000080; /* Navy */
+  --secondaryShade1: #d4d9e9;
+  --secondaryShade2: #a9b3d9;
+  --secondaryShade3: #7f8bc9;
+  --secondaryShade4: #5462b9;
+  --secondaryShade5: #2a37a8;
+
+  --accentColor: #808000; /* Olive Green */
+  --accentShade1: #e9e6d4;
+  --accentShade2: #d3cba8;
+  --accentShade3: #bcb17c;
+  --accentShade4: #a69f41;
+  --accentShade5: #908c00;
+
+  --neutralShade1: #f0f0f0; /* Light Gray */
+  --neutralShade2: #cccccc; /* Medium Gray */
+  --neutralShade3: #999999; /* Dark Gray */
+}
+
+/* General Color Scheme */
+body {
+  background: var(--backgroundColor);
+  color: var(--neutralShade8);
+}
+
+/* Typography */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+h1, h2, h3 {
+  font-family: "Exo 2", serif;
+}
+
+/* Emphasis and Bolding */
+strong {
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Font Weight, Sizing & Spacing */
+h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem, 3rem, 3.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: clamp(1.75rem, 2rem, 2.5rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: clamp(1.25rem, 1.5rem, 1.75rem);
+  line-height: 1.2;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: clamp(1.25rem, 1.5rem, 1.75rem);
+  line-height: 1.2;
+  font-style: italic;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+h6 {
+  font-weight: 200;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+a {
+  font-weight: 500;
+}
+
+/* Default Font Colors & Styling */
+
+/* default links */
+a {
+  color: var(--neutralShade8);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: var(--neutralShade1);
+  background-color: var(--primaryColor);
+  border-bottom: 3px solid var(--primaryShade5);
+  transition: 0.4s;
+}
+
+/* primary color links */
+a.primary {
+  color: var(--primaryColor);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+a.primary:hover {
+  color: var(--primaryShade1);
+  background-color: var(--primaryShade4);
+  border-bottom: 3px solid var(--secondaryColor);
+  transition: 0.4s;
+}
+
+/* secondary color links */
+a.secondary {
+  color: var(--secondaryShade5);
+  border-bottom: 2px dashed;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+a.secondary:hover {
+  color: var(--secondaryShade1);
+  background-color: var(--secondaryShade5);
+  border-bottom: 3px solid var(--primaryColor);
+  transition: 0.4s;
+}
+
+/*=============================
+  MEDIA QUERIES
+  DO NOT change anything below!
+=============================*/
+
+/* Small Screens */
+@media (max-width: 974px) {
+  main {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "colors colors"
+      "typography typography"
+      "headlines headlines"
+      "bodyex bodyex"
+      "links links"
+      ;
+  }
+
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .colors > h2 {
+    flex: 1 1 800px;
+    align-self: center;
+  }
+
+  .palette {
+    grid: 80px 45px min-content/repeat(5, minmax(10px, 50px));
+    box-shadow: 1px 1px 1px 1px var(--primaryShade5);
+  }
+
+  .palette.neutrals {
+    grid-template-columns: repeat(5, minmax(10px, 50px));
+  }
+
+  .colors,
+  .typography,
+  .headlines,
+  .body_text_example,
+  .links {
+    padding: 1rem 8px;
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 975px) and (max-width: 1200px) {
+  main {
+    grid-template-columns: 30ch auto auto;
+    grid-template-areas:
+      "colors typography typography"
+      "colors headlines headlines"
+      "colors bodyex links";
+  }
+
+  .typography {
+    padding-bottom: 40px;
+  }
+
+  .font-family {
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+}
