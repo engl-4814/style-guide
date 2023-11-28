@@ -1,4 +1,4 @@
-/*
+/* 
   When you complete this style guide, you will copy the following scope of the code below starting at the font import until the comment that states "STYLES BELOW ARE SPECIFIC TO THE STYLE GUIDE"
 */
 
@@ -7,7 +7,7 @@
 
   1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
 ==============*/
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Playfair+Display:wght@400;500;900&display=swap");
 
 /*============
   COLOR SCHEME
@@ -18,7 +18,7 @@
     - Use in code later as "color: var(--variableName)"
 
   The power of CSS variables includes interchangability. For example, when you want to change your color pallette, you only need to change the value defined at the variable.
-
+  
   For example, if you want to change your background and foreground colors, your primary and secondary colors, etc., locate the variable in the :root, change it, and then that value will be applied anywhere that variable is used in your CSS.
 
   Define it once, use across your code.
@@ -35,26 +35,26 @@
   --backgroundColor: #fff;
   --foregroundColor: #111;
 
-  --primaryColor: #03a9f4;
-  --primaryShade1: #e1f5fe;
-  --primaryShade2: #b3e5fc;
-  --primaryShade3: #4fc3f7;
-  --primaryShade4: #0288d1;
-  --primaryShade5: #0277bd;
+  --primaryColor: #6ae9c7;
+  --primaryShade1: #b3eddd;
+  --primaryShade2: #92efd6;
+  --primaryShade3: #7bebcd;
+  --primaryShade4: #45cfaa;
+  --primaryShade5: #129572;
 
-  --secondaryColor: #673ab7;
-  --secondaryShade1: #ede7f6;
-  --secondaryShade2: #d1c4e9;
-  --secondaryShade3: #9575cd;
-  --secondaryShade4: #512da8;
-  --secondaryShade5: #311b92;
+  --secondaryColor: #ffa500;
+  --secondaryShade1: #f4deb6;
+  --secondaryShade2: #f3c46c;
+  --secondaryShade3: #fab73c;
+  --secondaryShade4: #b37c15;
+  --secondaryShade5: #8d5e07;
 
-  --accentColor: #009688;
-  --accentShade1: #e0f2f1;
-  --accentShade2: #b2dfdb;
-  --accentShade3: #4db6ac;
-  --accentShade4: #00796b;
-  --accentShade5: #004d40;
+  --accentColor: #008080;
+  --accentShade1: #bcf5f5;
+  --accentShade2: #86f0f0;
+  --accentShade3: #46f7f7;
+  --accentShade4: #0d6767;
+  --accentShade5: #033f3f;
 
   --accent2Color: #8bc34a;
   --accent2Shade1: #e7f6d5;
@@ -81,7 +81,7 @@
 
   --grayColor: #999;
   --lightGrayColor: #ddd;
-
+  
   /* You can also use it for generally applied sizing and spacing. */
   --borderRadius: 6px;
   --boxShadow: 0 2px 5px rgba(#333, 0.2);
@@ -97,7 +97,7 @@
 
 /* GENERAL COLOR SCHEME */
 body {
-  background: var(--backgroundColor);
+  background: var(--canvasColor);
   color: var(--neutralShade8);
 }
 
@@ -106,8 +106,8 @@ body {
 ===========*/
 
 /* Font Families */
-body { font-family: "Poppins", sans-serif;}
-h1,h2,h3 { font-family: "Exo 2", serif; }
+body { font-family: "Open Sans", sans-serif;}
+h1,h2,h3 { font-family: "Playfair Display", serif; }
 
 /* Emphasis and Bolding */
 strong { font-weight: 500; }
@@ -158,8 +158,8 @@ a { font-weight: 500; }
 /* Default Font Colors & Styling */
 
 /* default links */
-a {
-  color: var(--neutralShade8);
+a { 
+  color: var(--neutralShade8); 
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
@@ -172,8 +172,8 @@ a:hover {
 }
 
 /* primary color links */
-a.primary {
-  color: var(--primaryColor);
+a.primary { 
+  color: var(--primaryColor); 
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
@@ -186,8 +186,8 @@ a.primary:hover {
 }
 
 /* secondary color links */
-a.secondary {
-  color: var(--secondaryShade5);
+a.secondary { 
+  color: var(--secondaryShade5); 
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
@@ -223,8 +223,8 @@ main {
   margin: 3em auto;
   display: grid;
   grid-template-columns: 30ch repeat(5, minmax(50px,1fr));
-  grid-template-areas:
-  "colors typography typography typography headlines headlines"
+  grid-template-areas: 
+  "colors typography typography typography headlines headlines" 
   "colors bodyex bodyex bodyex links links";
   color: var(--foregroundColor);
   text-align: left;
@@ -427,8 +427,8 @@ main > section:not(:first-child) {
   main {
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "colors colors"
+    grid-template-areas: 
+    "colors colors" 
     "typography typography"
     "headlines headlines"
     "bodyex bodyex"
@@ -464,8 +464,8 @@ main > section:not(:first-child) {
 @media (min-width: 975px) and (max-width: 1200px) {
   main {
     grid-template-columns: 30ch auto auto;
-    grid-template-areas:
-    "colors typography typography"
+    grid-template-areas: 
+    "colors typography typography" 
     "colors headlines headlines"
     "colors bodyex links";
   }
