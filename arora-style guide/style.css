@@ -1,30 +1,7 @@
-/*============
-  IMPORT FONTS
-
-  1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
-==============*/
+/* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/*============
-  COLOR SCHEME
-
-  2. Define the color scheme within the root element by using CSS variables:
-
-    - '--variableName: color_value;'
-    - Use in code later as "color: var(--variableName)"
-
-  The power of CSS variables includes interchangability. For example, when you want to change your color pallette, you only need to change the value defined at the variable.
-
-  For example, if you want to change your background and foreground colors, your primary and secondary colors, etc., locate the variable in the :root, change it, and then that value will be applied anywhere that variable is used in your CSS.
-
-  Define it once, use across your code.
-  Change it in one spot, it changes everywhere it's used in your code!
-
-  - See https://randoma11y.com to establish a basic 2-color scheme: primary and secondary colors.
-  - Note how the colors shades move from 1-5, i.e., lighter shades to darker shades. To produce shades, use VS Code's color picker tool to produce gradiations of the initial color.
-  - If you want //accent// shade(s), feel free to consider additional complimentary colors.
-=============*/
-
+/* Define Color Scheme */
 :root {
   --canvasColor: #f9f9f9;
 
@@ -129,7 +106,6 @@ a {
 }
 
 /* Default Font Colors & Styling */
-
 /* default links */
 a {
   color: var(--neutralShade8);
@@ -175,11 +151,7 @@ a.secondary:hover {
   transition: 0.4s;
 }
 
-/*=============================
-  MEDIA QUERIES
-  DO NOT change anything below!
-=============================*/
-
+/* Media Queries */
 /* Small Screens */
 @media (max-width: 974px) {
   main {
