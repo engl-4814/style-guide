@@ -36,49 +36,49 @@
   --backgroundColor: #fff;
   --foregroundColor: #111;
 
-  --primaryColor: #03a9f4;
-  --primaryShade1: #e1f5fe;
-  --primaryShade2: #b3e5fc;
-  --primaryShade3: #4fc3f7;
-  --primaryShade4: #0288d1;
-  --primaryShade5: #0277bd;
+  --primaryColor: #630031;
+  --primaryShade1: #efb8d3;
+  --primaryShade2: #b96b92;
+  --primaryShade3: #ab537f;
+  --primaryShade4: #a13d6f;
+  --primaryShade5: #86385f;
 
-  --secondaryColor: #673ab7;
-  --secondaryShade1: #ede7f6;
-  --secondaryShade2: #d1c4e9;
-  --secondaryShade3: #9575cd;
-  --secondaryShade4: #512da8;
-  --secondaryShade5: #311b92;
+  --secondaryColor: #cf4420;
+  --secondaryShade1: #d8a193;
+  --secondaryShade2: #ab6e5e;
+  --secondaryShade3: #9b5644;
+  --secondaryShade4: #a9543f;
+  --secondaryShade5: #972f15;
 
-  --accentColor: #009688;
-  --accentShade1: #e0f2f1;
-  --accentShade2: #b2dfdb;
-  --accentShade3: #4db6ac;
-  --accentShade4: #00796b;
-  --accentShade5: #004d40;
+  --accentColor: #08415c;
+  --accentShade1: #17adf2;
+  --accentShade2: #158ac1;
+  --accentShade3: #0e6d98;
+  --accentShade4: #0b5779;
+  --accentShade5: #041e2b;
 
-  --accent2Color: #8bc34a;
-  --accent2Shade1: #e7f6d5;
-  --accent2Shade2: #c5e1a5;
-  --accent2Shade3: #aed581;
-  --accent2Shade4: #689f38;
-  --accent2Shade5: #558b2f;
+  --accent2Color: #8ea8C3;
+  --accent2Shade1: #eaedf0;
+  --accent2Shade2: #b9d6f4;
+  --accent2Shade3: #81b7f1;
+  --accent2Shade4: #4998ed;
+  --accent2Shade5: #338cea;
 
-  --accent3Color: #f44336;
-  --accent3Shade1: #ffdde0;
-  --accent3Shade2: #ffcdd2;
-  --accent3Shade3: #ef9a9a;
-  --accent3Shade4: #d32f2f;
-  --accent3Shade5: #b71c1c;
+  --accent3Color: #D8CFAF;
+  --accent3Shade1: #f4f2eb;
+  --accent3Shade2: #f1e7c3;
+  --accent3Shade3: #f6e29a;
+  --accent3Shade4: #f1d46c;
+  --accent3Shade5: #f6cd38;
 
-  --neutralShade1: #f2f2f2;
-  --neutralShade2: #e8e9e9;
-  --neutralShade3: #d1d3d4;
-  --neutralShade4: #babdbf;
-  --neutralShade5: #808488;
-  --neutralShade6: #666a6d;
-  --neutralShade7: #4d5052;
-  --neutralShade8: #212122;
+  --neutralShade1: #f5D0C5;
+  --neutralShade2: #fdf9f8;
+  --neutralShade3: #f5e0da;
+  --neutralShade4: #fae1d9;
+  --neutralShade5: #f7a58c;
+  --neutralShade6: #f98c6b;
+  --neutralShade7: #fb7249;
+  --neutralShade8: #fc3f06;
 
   --grayColor: #999;
   --lightGrayColor: #ddd;
@@ -107,8 +107,8 @@ body {
 ===========*/
 
 /* Font Families */
-body { font-family: "Poppins", sans-serif;}
-h1,h2,h3 { font-family: "Exo 2", serif; }
+body { font-family: "Didact Gothic", sans-serif;}
+h1,h2,h3 { font-family: "Merriweather Sans", sans-serif; }
 
 /* Emphasis and Bolding */
 strong { font-weight: 500; }
@@ -123,24 +123,24 @@ body {
 h1 {
   font-weight: 700;
   font-size: clamp(2.5rem,3rem,3.5rem);
-  line-height: 1.2;
+  line-height: 2;
   text-transform: uppercase;
 }
 h2 {
   font-weight: 500;
   font-size: clamp(1.75rem,2rem,2.5rem);
-  line-height: 1.2;
+  line-height: 1.8;
   text-transform: uppercase;
 }
 h3 {
   font-weight: 500;
   font-size: clamp(1.25rem,1.5rem,1.75rem);
-  line-height: 1.2;
+  line-height: 1.6;
 }
 h4 {
   font-weight: 300;
   font-size: clamp(1.25rem,1.5rem,1.75rem);
-  line-height: 1.2;
+  line-height: 1.4;
   font-style: italic;
 }
 h5 {
@@ -151,7 +151,7 @@ h5 {
 h6 {
   font-weight: 200;
   font-size: 1.05rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 a { font-weight: 500; }
