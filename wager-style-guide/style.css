@@ -7,9 +7,7 @@
 
   1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
 ==============*/
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Ubuntu:wght@300;400;700&display=swap');
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Ubuntu:wght@300;400;700&display=swap');
 /*============
   COLOR SCHEME
 
@@ -29,9 +27,8 @@
   - Note how the colors shades move from 1-5, i.e., lighter shades to darker shades. To produce shades, use VS Code's color picker tool to produce gradiations of the initial color.
   - If you want //accent// shade(s), feel free to consider additional complimentary colors.
 =============*/
-
 :root {
-  --canvasColor: #b01313;
+  /* Color Theme Swatches in Hex */
 
   --backgroundColor: #d6dee6;
   --foregroundColor: #000000;
@@ -39,7 +36,7 @@
   --primaryColor: #d6dee6;
   --primaryShade1: #e1f5fe;
   --primaryShade2: #b3e5fc;
-  --primaryShade3: #4fc3f7;
+  --primaryShade3: #65ceff;
   --primaryShade4: #0288d1;
   --primaryShade5: #0277bd;
 
