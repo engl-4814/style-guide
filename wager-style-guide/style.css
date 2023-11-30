@@ -31,19 +31,19 @@
 =============*/
 
 :root {
-  --canvasColor: #f9f9f9;
+  --canvasColor: #b01313;
 
-  --backgroundColor: #fff;
-  --foregroundColor: #111;
+  --backgroundColor: #d6dee6;
+  --foregroundColor: #000000;
 
-  --primaryColor: #03a9f4;
+  --primaryColor: #d6dee6;
   --primaryShade1: #e1f5fe;
   --primaryShade2: #b3e5fc;
   --primaryShade3: #4fc3f7;
   --primaryShade4: #0288d1;
   --primaryShade5: #0277bd;
 
-  --secondaryColor: #673ab7;
+  --secondaryColor: #111;
   --secondaryShade1: #ede7f6;
   --secondaryShade2: #d1c4e9;
   --secondaryShade3: #9575cd;
