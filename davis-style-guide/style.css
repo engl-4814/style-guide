@@ -1,4 +1,4 @@
-/* 
+/*
   When you complete this style guide, you will copy the following scope of the code below starting at the font import until the comment that states "STYLES BELOW ARE SPECIFIC TO THE STYLE GUIDE"
 */
 
@@ -7,7 +7,8 @@
 
   1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
 ==============*/
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Pixelify+Sans&family=Press+Start+2P&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap');
+
 /*============
   COLOR SCHEME
 
@@ -17,7 +18,7 @@
     - Use in code later as "color: var(--variableName)"
 
   The power of CSS variables includes interchangability. For example, when you want to change your color pallette, you only need to change the value defined at the variable.
-  
+
   For example, if you want to change your background and foreground colors, your primary and secondary colors, etc., locate the variable in the :root, change it, and then that value will be applied anywhere that variable is used in your CSS.
 
   Define it once, use across your code.
@@ -34,34 +35,34 @@
   --backgroundColor: #fff;
   --foregroundColor: #111;
 
-  --primaryColor: #7FBF50;
-  --primaryShade1: #c7fea1;
-  --primaryShade2: #8bc95f;
-  --primaryShade3: #7fbf50;
-  --primaryShade4: #61933d;
-  --primaryShade5: #385424;
+  --primaryColor: #ffffff;
+  --primaryShade1: #cdd4d8;
+  --primaryShade2: #9fa6a9;
+  --primaryShade3: #4fc2f727;
+  --primaryShade4: #0289d110;
+  --primaryShade5: #0278bd00;
 
-  --secondaryColor: #73cdeb;
-  --secondaryShade1: #b0eafd;
-  --secondaryShade2: #83e0ff;
-  --secondaryShade3: #73cdeb;
-  --secondaryShade4: #65b1ca;
-  --secondaryShade5: #508da1;
+  --secondaryColor: #630031;
+  --secondaryShade1: #f4d2d2;
+  --secondaryShade2: rgb(215, 160, 160);
+  --secondaryShade3: #cd7575;
+  --secondaryShade4: #a82d2d;
+  --secondaryShade5: #921b1b;
 
-  --accentColor: #d97ba7;
-  --accentShade1: #ffaad2;
-  --accentShade2: #f390be;
-  --accentShade3: #d97ba7;
-  --accentShade4: #b3668a;
-  --accentShade5: #874a67;
-
-  --accent2Color: #ead539;
-  --accent2Shade1: #ffef77;
-  --accent2Shade2: #fce84f;
-  --accent2Shade3: #ead539;
-  --accent2Shade4: #c5b328;
-  --accent2Shade5: #9d8f27;
+  --accentColor: #CF4420;
+  --accentShade1: #f2e7e0;
+  --accentShade2: #dfc6b2;
+  --accentShade3: #b6704d;
+  --accentShade4: #793400;
+  --accentShade5: #4d2500;
 /*
+  --accent2Color: #8bc34a;
+  --accent2Shade1: #e7f6d5;
+  --accent2Shade2: #c5e1a5;
+  --accent2Shade3: #aed581;
+  --accent2Shade4: #689f38;
+  --accent2Shade5: #558b2f;
+
   --accent3Color: #f44336;
   --accent3Shade1: #ffdde0;
   --accent3Shade2: #ffcdd2;
@@ -80,13 +81,13 @@
 
   --grayColor: #999;
   --lightGrayColor: #ddd;
-  
+
   /* You can also use it for generally applied sizing and spacing. */
   --borderRadius: 6px;
   --boxShadow: 0 2px 5px rgba(#333, 0.2);
 
   /* Change default root font size (16px), if desired */
-  font-size: 18px;
+  font-size: 16px;
 }
 
 
@@ -96,7 +97,7 @@
 
 /* GENERAL COLOR SCHEME */
 body {
-  background: var(--canvasColor);
+  background: var(--backgroundColor);
   color: var(--neutralShade8);
 }
 
@@ -105,12 +106,8 @@ body {
 ===========*/
 
 /* Font Families */
-p { font-family: "Ariel", sans-serif;}
-h1 { font-family: "Press Start 2P"; }
-h2 { font-family: "Pixelify Sans", serif; }
-h3 { font-family: "Silkscreen"; }
-
-.links__sec { font-family: "Pixelify Sans";}
+body { font-family: "Work Sans", sans-serif;}
+h1,h2,h3 { font-family: "Playfair Display", serif; }
 
 /* Emphasis and Bolding */
 strong { font-weight: 500; }
@@ -161,44 +158,44 @@ a { font-weight: 500; }
 /* Default Font Colors & Styling */
 
 /* default links */
-a { 
-  color: var(--neutralShade8); 
+a {
+  color: var(--neutralShade8);
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
 }
 a:hover {
-  color: var(--neutralShade1);
-  background-color: var(--primaryColor);
+  color: var(--neutralShade5);
+  background-color: var(--primaryColorshade5);
   border-bottom: 3px solid var(--primaryShade5);
   transition: 0.4s;
 }
 
 /* primary color links */
-a.primary { 
-  color: var(--primaryColor); 
+a.primary {
+  color: var(--secondaryShade5);
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
 }
 a.primary:hover {
-  color: var(--primaryShade1);
-  background-color: var(--primaryShade4);
-  border-bottom: 3px solid var(--secondaryColor);
+  color: var(--secondaryShade1);
+  background-color: var(--secondaryShade5);
+  border-bottom: 3px solid var(--primaryColor);
   transition: 0.4s;
 }
 
 /* secondary color links */
-a.secondary { 
-  color: var(--secondaryShade5); 
+a.secondary {
+  color: var(--accent2Shade3);
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
 }
 a.secondary:hover {
-  color: var(--secondaryShade1);
-  background-color: var(--secondaryShade5);
-  border-bottom: 3px solid var(--primaryColor);
+  color: var(--accent2Shade1);
+  background-color: var(--accent2Shade4);
+  border-bottom: 3px solid var(--accentColor);
   transition: 0.4s;
 }
 
@@ -226,8 +223,8 @@ main {
   margin: 3em auto;
   display: grid;
   grid-template-columns: 30ch repeat(5, minmax(50px,1fr));
-  grid-template-areas: 
-  "colors typography typography typography headlines headlines" 
+  grid-template-areas:
+  "colors typography typography typography headlines headlines"
   "colors bodyex bodyex bodyex links links";
   color: var(--foregroundColor);
   text-align: left;
@@ -261,8 +258,8 @@ main > section:not(:first-child) {
   min-width: 10em;
 }
 
-.font__second-level { font-family: "Silkscreen", sans-serif;}
-.font__first-level { font-family: "Press Start 2P", serif; }
+.font__second-level { font-family: "Work Sans", sans-serif;}
+.font__first-level { font-family: "Playfair Display", serif; }
 .font__first-level > span { font-size: 1rem; }
 .font__second-level > span { font-size: 0.8rem; }
 .font-family-bold > * { font-weight: 900; }
@@ -430,8 +427,8 @@ main > section:not(:first-child) {
   main {
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "colors colors" 
+    grid-template-areas:
+    "colors colors"
     "typography typography"
     "headlines headlines"
     "bodyex bodyex"
@@ -467,8 +464,8 @@ main > section:not(:first-child) {
 @media (min-width: 975px) and (max-width: 1200px) {
   main {
     grid-template-columns: 30ch auto auto;
-    grid-template-areas: 
-    "colors typography typography" 
+    grid-template-areas:
+    "colors typography typography"
     "colors headlines headlines"
     "colors bodyex links";
   }
