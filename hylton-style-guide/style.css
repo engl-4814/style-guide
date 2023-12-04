@@ -7,7 +7,14 @@
 
   1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
 ==============*/
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Libre+Franklin:wght@600&family=Pathway+Gothic+One&display=swap');
+
+
+/*font-family: 'Libre Franklin', sans-serif;
+font-family: 'Pathway Gothic One', sans-serif;
+font-family: 'Bangers', sans-serif; */
+
 
 /*============
   COLOR SCHEME
@@ -35,40 +42,40 @@
   --backgroundColor: #fff;
   --foregroundColor: #111;
 
-  --primaryColor: #03a9f4;
-  --primaryShade1: #e1f5fe;
-  --primaryShade2: #b3e5fc;
-  --primaryShade3: #4fc3f7;
-  --primaryShade4: #0288d1;
-  --primaryShade5: #0277bd;
+  --primaryColor: #EEB1D5;
+  --primaryShade1: #eeb1d5d2;
+  --primaryShade2: #eeb1d5a7;
+  --primaryShade3: #eeb1d59f;
+  --primaryShade4: #eeb1d561;
+  --primaryShade5: #eeb1d51e;
 
-  --secondaryColor: #673ab7;
-  --secondaryShade1: #ede7f6;
-  --secondaryShade2: #d1c4e9;
-  --secondaryShade3: #9575cd;
-  --secondaryShade4: #512da8;
-  --secondaryShade5: #311b92;
+  --secondaryColor: #EFC7E5;
+  --secondaryShade1: #efc7e5ce;
+  --secondaryShade2: #efc7e5b0;
+  --secondaryShade3: #efc7e58c;
+  --secondaryShade4: #efc7e56f;
+  --secondaryShade5: #efc7e529;
 
-  --accentColor: #009688;
-  --accentShade1: #e0f2f1;
-  --accentShade2: #b2dfdb;
-  --accentShade3: #4db6ac;
-  --accentShade4: #00796b;
-  --accentShade5: #004d40;
+  --accentColor: #E18EA0;
+  --accentShade1: #e18ea0e1;
+  --accentShade2: #e18ea0b1;
+  --accentShade3: #e18ea08f;
+  --accentShade4: #e18ea05e;
+  --accentShade5: #e18ea03d;
 
-  --accent2Color: #8bc34a;
-  --accent2Shade1: #e7f6d5;
-  --accent2Shade2: #c5e1a5;
-  --accent2Shade3: #aed581;
-  --accent2Shade4: #689f38;
-  --accent2Shade5: #558b2f;
+  --accent2Color: #7E8D85;
+  --accent2Shade1: #7e8d85d4;
+  --accent2Shade2: #7e8d85b1;
+  --accent2Shade3: #7e8d857a;
+  --accent2Shade4: #7e8d855e;
+  --accent2Shade5: #7e8d852f;
 
-  --accent3Color: #f44336;
-  --accent3Shade1: #ffdde0;
-  --accent3Shade2: #ffcdd2;
-  --accent3Shade3: #ef9a9a;
-  --accent3Shade4: #d32f2f;
-  --accent3Shade5: #b71c1c;
+  --accent3Color: #2e282ae6;
+  --accent3Shade1: #2E282A;
+  --accent3Shade2: #2e282aaf;
+  --accent3Shade3: #2e282a89;
+  --accent3Shade4: #2e282a3c;
+  --accent3Shade5: #2e282a00;
 
   --neutralShade1: #f2f2f2;
   --neutralShade2: #e8e9e9;
@@ -106,8 +113,9 @@ body {
 ===========*/
 
 /* Font Families */
-body { font-family: "Poppins", sans-serif;}
-h1,h2,h3 { font-family: "Exo 2", serif; }
+body { font-family: "Libre Franklin", sans-serif;}
+h1,h2,h3 { font-family: "Bangers", sans-serif; }
+p { font-family: "Pathway Gothic One";}
 
 /* Emphasis and Bolding */
 strong { font-weight: 500; }
