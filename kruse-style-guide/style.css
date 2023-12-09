@@ -7,7 +7,8 @@
 
   1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
 ==============*/
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Playpen+Sans:wght@300;400;500;600;700&display=swap');
 
 /*============
   COLOR SCHEME
@@ -32,55 +33,26 @@
 :root {
   --canvasColor: #f9f9f9;
 
-  --backgroundColor: #fff;
-  --foregroundColor: #111;
+  --backgroundColor: #FCF7F8;
+  --foregroundColor: #81a14e;
 
-  --primaryColor: #03a9f4;
-  --primaryShade1: #e1f5fe;
-  --primaryShade2: #b3e5fc;
-  --primaryShade3: #4fc3f7;
-  --primaryShade4: #0288d1;
-  --primaryShade5: #0277bd;
+  --primaryColor: #81a14e;
+  --secondaryColor: #375d07;
+  --accentColor: #b71b27;
+  --accent2Color: #3b3a4c;
+  --accent3Color: #9a909c;
 
-  --secondaryColor: #673ab7;
-  --secondaryShade1: #ede7f6;
-  --secondaryShade2: #d1c4e9;
-  --secondaryShade3: #9575cd;
-  --secondaryShade4: #512da8;
-  --secondaryShade5: #311b92;
+  --neutralShade1: #bfc8cb;
+  --neutralShade2: #c4b2a2;
+  --neutralShade3: #514b45;
+  --neutralShade4: #9a909c;
+  --neutralShade5: #797978;
+  --neutralShade6: #2b2c2d;
+  --neutralShade7: #181113;
+  --neutralShade8: #13110c;
 
-  --accentColor: #009688;
-  --accentShade1: #e0f2f1;
-  --accentShade2: #b2dfdb;
-  --accentShade3: #4db6ac;
-  --accentShade4: #00796b;
-  --accentShade5: #004d40;
-
-  --accent2Color: #8bc34a;
-  --accent2Shade1: #e7f6d5;
-  --accent2Shade2: #c5e1a5;
-  --accent2Shade3: #aed581;
-  --accent2Shade4: #689f38;
-  --accent2Shade5: #558b2f;
-
-  --accent3Color: #f44336;
-  --accent3Shade1: #ffdde0;
-  --accent3Shade2: #ffcdd2;
-  --accent3Shade3: #ef9a9a;
-  --accent3Shade4: #d32f2f;
-  --accent3Shade5: #b71c1c;
-
-  --neutralShade1: #f2f2f2;
-  --neutralShade2: #e8e9e9;
-  --neutralShade3: #d1d3d4;
-  --neutralShade4: #babdbf;
-  --neutralShade5: #808488;
-  --neutralShade6: #666a6d;
-  --neutralShade7: #4d5052;
-  --neutralShade8: #212122;
-
-  --grayColor: #999;
-  --lightGrayColor: #ddd;
+  --grayColor: #9a909c;
+  --lightGrayColor: #bfc8bf;
 
   /* You can also use it for generally applied sizing and spacing. */
   --borderRadius: 6px;
@@ -105,9 +77,10 @@ body {
   TYPOGRAPHY
 ===========*/
 
+
 /* Font Families */
-body { font-family: "Poppins", sans-serif;}
-h1,h2,h3 { font-family: "Exo 2", serif; }
+body {font-family: 'Playpen Sans', cursive;}
+h1,h2,h3 {font-family: 'Darumadrop One', sans-serif;}
 
 /* Emphasis and Bolding */
 strong { font-weight: 500; }
@@ -159,14 +132,14 @@ a { font-weight: 500; }
 
 /* default links */
 a {
-  color: var(--neutralShade8);
+  color: var(--accentColor);
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
 }
 a:hover {
-  color: var(--neutralShade1);
-  background-color: var(--primaryColor);
+  color: var(--neutralShade2);
+  background-color: var(--backgroundColor);
   border-bottom: 3px solid var(--primaryShade5);
   transition: 0.4s;
 }
@@ -179,7 +152,7 @@ a.primary {
   transition: 0.4s;
 }
 a.primary:hover {
-  color: var(--primaryShade1);
+  color: var(--secondaryColor);
   background-color: var(--primaryShade4);
   border-bottom: 3px solid var(--secondaryColor);
   transition: 0.4s;
@@ -187,13 +160,13 @@ a.primary:hover {
 
 /* secondary color links */
 a.secondary {
-  color: var(--secondaryShade5);
+  color: var(--secondaryColor);
   border-bottom: 2px dashed;
   cursor: pointer;
   transition: 0.4s;
 }
 a.secondary:hover {
-  color: var(--secondaryShade1);
+  color: var(--primaryColor);
   background-color: var(--secondaryShade5);
   border-bottom: 3px solid var(--primaryColor);
   transition: 0.4s;
@@ -258,8 +231,8 @@ main > section:not(:first-child) {
   min-width: 10em;
 }
 
-.font__second-level { font-family: "Poppins", sans-serif;}
-.font__first-level { font-family: "Exo 2", serif; }
+.font__second-level {font-family: 'Playpen Sans', cursive;}
+.font__first-level {font-family: 'Darumadrop One', sans-serif;}
 .font__first-level > span { font-size: 1rem; }
 .font__second-level > span { font-size: 0.8rem; }
 .font-family-bold > * { font-weight: 900; }
