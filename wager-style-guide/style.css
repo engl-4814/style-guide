@@ -30,45 +30,45 @@
 :root {
   /* Color Theme Swatches in Hex */
 
-  --backgroundColor: #d6dee6;
+  --backgroundColor: #f3c0be;
   --foregroundColor: #000000;
 
-  --primaryColor: #d6dee6;
-  --primaryShade1: #e1f5fe;
-  --primaryShade2: #b3e5fc;
-  --primaryShade3: #65ceff;
-  --primaryShade4: #0288d1;
+  --primaryColor: #f3c0be;
+  --primaryShade1: #fce3e1;
+  --primaryShade2: #f9d7d6;
+  --primaryShade3: #dcaba9;
+  --primaryShade4: #c69594;
   --primaryShade5: #0277bd;
 
-  --secondaryColor: #111;
-  --secondaryShade1: #ede7f6;
-  --secondaryShade2: #d1c4e9;
-  --secondaryShade3: #9575cd;
-  --secondaryShade4: #512da8;
-  --secondaryShade5: #311b92;
+  --secondaryColor: #93c3a1;
+  --secondaryShade1: #6a9978;
+  --secondaryShade2: #c5e1a5;
+  --secondaryShade3: #aed581;
+  --secondaryShade4: #689f38;
+  --secondaryShade5: #558b2f;
 
-  --accentColor: #009688;
+  --accentColor: #ce9eb4;
   --accentShade1: #e0f2f1;
   --accentShade2: #b2dfdb;
   --accentShade3: #4db6ac;
   --accentShade4: #00796b;
   --accentShade5: #004d40;
 
-  --accent2Color: #8bc34a;
+  --accent2Color: #f6ca9b;
   --accent2Shade1: #e7f6d5;
   --accent2Shade2: #c5e1a5;
   --accent2Shade3: #aed581;
   --accent2Shade4: #689f38;
   --accent2Shade5: #558b2f;
 
-  --accent3Color: #f44336;
+  --accent3Color: #f6ebac;
   --accent3Shade1: #ffdde0;
   --accent3Shade2: #ffcdd2;
   --accent3Shade3: #ef9a9a;
   --accent3Shade4: #d32f2f;
   --accent3Shade5: #b71c1c;
 
-  --neutralShade1: #f2f2f2;
+  --neutralShade1: #bcdbc4;
   --neutralShade2: #e8e9e9;
   --neutralShade3: #d1d3d4;
   --neutralShade4: #babdbf;
