@@ -30,31 +30,31 @@
 :root {
   /* Color Theme Swatches in Hex */
 
-  --backgroundColor: #f3c0be;
+  --backgroundColor: #94e2d7;
   --foregroundColor: #000000;
 
-  --primaryColor: #f3c0be;
+  --primaryColor: #fdce94;
   --primaryShade1: #fce3e1;
   --primaryShade2: #f9d7d6;
   --primaryShade3: #dcaba9;
   --primaryShade4: #c69594;
   --primaryShade5: #0277bd;
 
-  --secondaryColor: #93c3a1;
+  --secondaryColor: #a2e2a6;
   --secondaryShade1: #6a9978;
   --secondaryShade2: #c5e1a5;
   --secondaryShade3: #aed581;
   --secondaryShade4: #689f38;
   --secondaryShade5: #558b2f;
 
-  --accentColor: #ce9eb4;
+  --accentColor: #d8e798;
   --accentShade1: #e0f2f1;
   --accentShade2: #b2dfdb;
   --accentShade3: #4db6ac;
   --accentShade4: #00796b;
   --accentShade5: #004d40;
 
-  --accent2Color: #f6ca9b;
+  --accent2Color: #94E2d7;
   --accent2Shade1: #e7f6d5;
   --accent2Shade2: #c5e1a5;
   --accent2Shade3: #aed581;
@@ -68,7 +68,7 @@
   --accent3Shade4: #d32f2f;
   --accent3Shade5: #b71c1c;
 
-  --neutralShade1: #bcdbc4;
+  --neutralShade1: #000000;
   --neutralShade2: #e8e9e9;
   --neutralShade3: #d1d3d4;
   --neutralShade4: #babdbf;
