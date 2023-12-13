@@ -1,113 +1,58 @@
-/*
-  When you complete this style guide, you will copy the following scope of the code below starting at the font import until the comment that states "STYLES BELOW ARE SPECIFIC TO THE STYLE GUIDE"
-*/
-
-/*============
-  IMPORT FONTS
-
-  1. Import your own fonts via https://fonts.google.com. Be sure to revise the family names in the CSS and in the HTML
-==============*/
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-/*============
-  COLOR SCHEME
-
-  2. Define the color scheme within the root element by using CSS variables:
-
-    - '--variableName: color_value;'
-    - Use in code later as "color: var(--variableName)"
-
-  The power of CSS variables includes interchangability. For example, when you want to change your color pallette, you only need to change the value defined at the variable.
-
-  For example, if you want to change your background and foreground colors, your primary and secondary colors, etc., locate the variable in the :root, change it, and then that value will be applied anywhere that variable is used in your CSS.
-
-  Define it once, use across your code.
-  Change it in one spot, it changes everywhere it's used in your code!
-
-  - See https://randoma11y.com to establish a basic 2-color scheme: primary and secondary colors.
-  - Note how the colors shades move from 1-5, i.e., lighter shades to darker shades. To produce shades, use VS Code's color picker tool to produce gradiations of the initial color.
-  - If you want //accent// shade(s), feel free to consider additional complimentary colors.
-=============*/
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url("https://fonts.googleapis.com/css?family=Trirong");
 
 :root {
-  --canvasColor: #f9f9f9;
+    --canvasColor: #524c63;
+  
+    --backgroundColor: #42a76e;
+    --foregroundColor: #111;
+  
+    --primaryColor: #524c63;
+    --primaryShade1: #524c63;
+    --primaryShade2: #524c63;
+    --primaryShade3: #524c63;
+    --primaryShade4: #524c63;
+    --primaryShade5: #524c63;
+  
+    --secondaryColor: #42a76e;
+    --secondaryShade1: #76cf9d;
+    --secondaryShade2: #42a76e;
+    --secondaryShade3: #1e5234;
+    --secondaryShade4: #42a76e;
+    --secondaryShade5: #163624;
 
-  --backgroundColor: #fff;
-  --foregroundColor: #111;
+    --neutralShade1: #f2f2f2;
+    --neutralShade2: #e8e9e9;
+    --neutralShade3: #d1d3d4;
+    --neutralShade4: #babdbf;
+    --neutralShade5: #808488;
+    --neutralShade6: #666a6d;
+    --neutralShade7: #4d5052;
+    --neutralShade8: #212122;
 
-  --primaryColor: #03a9f4;
-  --primaryShade1: #e1f5fe;
-  --primaryShade2: #b3e5fc;
-  --primaryShade3: #4fc3f7;
-  --primaryShade4: #0288d1;
-  --primaryShade5: #0277bd;
+    --grayColor: #999;
+    --lightGrayColor: #ddd;
 
-  --secondaryColor: #673ab7;
-  --secondaryShade1: #ede7f6;
-  --secondaryShade2: #d1c4e9;
-  --secondaryShade3: #9575cd;
-  --secondaryShade4: #512da8;
-  --secondaryShade5: #311b92;
+    /* You can also use it for generally applied sizing and spacing. */
+    --borderRadius: 6px;
+    --boxShadow: 0 2px 5px rgba(#333, 0.2);
 
-  --accentColor: #009688;
-  --accentShade1: #e0f2f1;
-  --accentShade2: #b2dfdb;
-  --accentShade3: #4db6ac;
-  --accentShade4: #00796b;
-  --accentShade5: #004d40;
-
-  --accent2Color: #8bc34a;
-  --accent2Shade1: #e7f6d5;
-  --accent2Shade2: #c5e1a5;
-  --accent2Shade3: #aed581;
-  --accent2Shade4: #689f38;
-  --accent2Shade5: #558b2f;
-
-  --accent3Color: #f44336;
-  --accent3Shade1: #ffdde0;
-  --accent3Shade2: #ffcdd2;
-  --accent3Shade3: #ef9a9a;
-  --accent3Shade4: #d32f2f;
-  --accent3Shade5: #b71c1c;
-
-  --neutralShade1: #f2f2f2;
-  --neutralShade2: #e8e9e9;
-  --neutralShade3: #d1d3d4;
-  --neutralShade4: #babdbf;
-  --neutralShade5: #808488;
-  --neutralShade6: #666a6d;
-  --neutralShade7: #4d5052;
-  --neutralShade8: #212122;
-
-  --grayColor: #999;
-  --lightGrayColor: #ddd;
-
-  /* You can also use it for generally applied sizing and spacing. */
-  --borderRadius: 6px;
-  --boxShadow: 0 2px 5px rgba(#333, 0.2);
-
-  /* Change default root font size (16px), if desired */
-  font-size: 18px;
+    /* Change default root font size (16px), if desired */
+    font-size: 18px;
 }
 
-
-/*
-  After you define your color schemes above, revise the color and typography rulesets below in accordance with your desired new font families, weights, line-heights, etc. You can even modify which variables are being used.
-*/
-
-/* GENERAL COLOR SCHEME */
 body {
-  background: var(--backgroundColor);
-  color: var(--neutralShade8);
-}
+    background: var(--backgroundColor);
+    color: var(--foregroundColor);
+  }
 
-/*==========
+  /*==========
   TYPOGRAPHY
 ===========*/
 
 /* Font Families */
-body { font-family: "Poppins", sans-serif;}
-h1,h2,h3 { font-family: "Exo 2", serif; }
+body { font-family: "trirong", sans-serif;}
+h1,h2,h3 { font-family: "Audiowide", serif; }
 
 /* Emphasis and Bolding */
 strong { font-weight: 500; }
@@ -197,85 +142,6 @@ a.secondary:hover {
   background-color: var(--secondaryShade5);
   border-bottom: 3px solid var(--primaryColor);
   transition: 0.4s;
-}
-
-
-/*##########################################
-
-  !!!!IGNORE!!!!
-  STYLES BELOW ARE SPECIFIC TO THE STYLE GUIDE
-  DO NOT COPY-PASTE THESE STYLES
-
-###########################################*/
-
-/*==============
-  LAYOUT STYLES
-  DO NOT CHANGE!
-===============*/
-
-.main_banner h1 {
-  text-align: center;
-}
-
-/*Large Screen Layout*/
-main {
-  width: 90%;
-  margin: 3em auto;
-  display: grid;
-  grid-template-columns: 30ch repeat(5, minmax(50px,1fr));
-  grid-template-areas:
-  "colors typography typography typography headlines headlines"
-  "colors bodyex bodyex bodyex links links";
-  color: var(--foregroundColor);
-  text-align: left;
-}
-
-main > section:not(:first-child) {
-  box-shadow: 1px 1px 2px 0px var(--primaryColor);
-}
-
-/* Grid Areas */
-.colors { grid-area: colors; background-color: var(--secondaryShade1); box-shadow: 2px 2px 3px -1px var(--secondaryShade2);}
-.typography { grid-area: typography; }
-.headlines { grid-area: headlines; }
-.body_text_example { grid-area: bodyex; }
-.links { grid-area: links; }
-
-.colors,.typography,.headlines,.body_text_example,.links {
-  padding: 1rem;
-}
-.links > div { margin: 2rem 0; }
-
-/* Font Family Cases */
-.font-family {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
-}
-.font-family > div {
-  flex: 1 1 30%;
-  min-width: 10em;
-}
-
-.font__second-level { font-family: "Poppins", sans-serif;}
-.font__first-level { font-family: "Exo 2", serif; }
-.font__first-level > span { font-size: 1rem; }
-.font__second-level > span { font-size: 0.8rem; }
-.font-family-bold > * { font-weight: 900; }
-.font-family-medium > * { font-weight: 500; }
-.font-family-light > * { font-weight: 300; }
-
-.font-example {
-  display: flex;
-  flex-wrap: wrap;
-}
-.font-example > div {
-  flex: 1 1 45%;
-  min-width: 16em;
-}
-.font-example p {
-  margin-bottom: 15px;
 }
 
 /*=============================
